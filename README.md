@@ -1,10 +1,10 @@
-# SSD_# Assignment2
+# SSD_ Assignment2
 
 IDE Used - Visual Studio Code
 
 # Prerequisites
 
-  Should have Visusl Studio Code and XAMPP Server installed
+  Should have Visual Studio Code and XAMPP Server installed
   
 # Follow the below steps to setup the application
 
