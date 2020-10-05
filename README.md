@@ -1,7 +1,11 @@
-# SSD_Assignment2
+# SSD_ Assignment2
 
 IDE Used - Visual Studio Code
 
+# Prerequisites
+
+  Should have Visual Studio Code and XAMPP Server installed
+  
 # Follow the below steps to setup the application
 
 1.	Clone the project folder
