@@ -43,17 +43,24 @@ $(document).ready(function(){
         this.file = file;
     };
     
+    //Retrieves the type of the file
     Upload.prototype.getType = function() {
         localStorage.setItem("type",this.file.type);
         return this.file.type;
     };
+
+    //Retrieves thesize of the file
     Upload.prototype.getSize = function() {
         localStorage.setItem("size",this.file.size);
         return this.file.size;
     };
+
+    //Retrieves the name of the file 
     Upload.prototype.getName = function() {
         return this.file.name;
     };
+
+    //Uploads the selected file
     Upload.prototype.doUpload = function () {
         var that = this;
         var formData = new FormData();
@@ -93,6 +100,7 @@ $(document).ready(function(){
         });
     };
     
+    //Handles the progress bar
     Upload.prototype.progressHandling = function (event) {
         var percent = 0;
         var position = event.loaded || event.position;
@@ -105,6 +113,7 @@ $(document).ready(function(){
         $(progress_bar_id + " .status").text(percent + "%");
     };
 
+    //Method invoked by the upload button
     $("#upload").on("click", function (e) {
         var file = $("#files")[0].files[0];
         var upload = new Upload(file);
